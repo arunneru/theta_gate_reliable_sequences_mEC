@@ -1,0 +1,10 @@
+60   Swiper: 
+     
+     INITCOND = str(init_cond)
+     
+     I2I = str(i2i)
+     
+     outfile = open("configure_files/nsets_Neuron_%si2i.isf"%I2I,"wb")
+     print("configure_files/nsets_Neuron_%si2i.isf"%str(i2i))
+ 
+     np.random.seed(init_cond)
