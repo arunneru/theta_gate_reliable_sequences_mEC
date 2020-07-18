@@ -1,0 +1,1 @@
+"synapse 1"dxdt:1,s:0,gsyn:0.030000,tau_r:0.01,tau_d:3.0,esyn:0,delay:0.0,pre:0,post:1;"synapse 2"dxdt:1,s:0,gsyn:0.100000,tau_r:.30,tau_d:9.0,esyn:-80,delay:0.0,pre:1,post:0;

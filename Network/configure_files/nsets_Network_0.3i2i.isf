@@ -1,0 +1,4 @@
+"neuron 0"dxdt:7,v:-55.036,m:0.0224224,n:0.103519,h:0.954963,ms:0.0678057,mhs:0.118111,mhf:0.0779264,gh:1.5,I_syn:0.0,ampSin:0.0,ampNoise:0.008,freq:0.0,phase:0.0,V_th_Osc:-80,tau_fact:1.0,PulseDuration:10000,PulseStart:500,PulseEnd:9500,tau_rise:137.0,tau_fall:20.0,PulseMax:-2.7,PulseMin:-3.6,I_PeriodicPulse:0.0,I_OscillatoryDrive:0.0, I_Na_Stellate_HR2005:0.0, I_K_Stellate_HR2005:0.0, I_Leak_Stellate_HR2005:0.0, I_NaP_Stellate_HR2005:0.0, I_Hs_Stellate_HR2005:0.0, I_Hf_Stellate_HR2005:0.0, ;
+
+"neuron 1 "dxdt:3,v:3.850352,n:0.764751,h:0.283859,I_DC:0.0,ampSin:0.05,ampNoise:0.015,freq:7.0,phase:0.0,V_th_Osc:-80,PulseDuration:10000,PulseStart:500,PulseEnd:9500,tau_rise:20.0,tau_fall:20.0,PulseMax:0.3,PulseMin:-0.05,I_PeriodicPulse:0.0,I_syn:0.0,I_OscillatoryDrive:0.0, I_Na_InterNeuron_Wang96:0.0, I_K_InterNeuron_Wang96:0.0, I_Leak_InterNeuron_Wang96:0.0 ;
+
