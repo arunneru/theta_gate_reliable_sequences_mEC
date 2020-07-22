@@ -18,15 +18,15 @@ Follow the notebook How_To_Network to get a sense of how to use insilico + pytho
 
 ## Step 3 -  Steps to generate figures
 
-Fig 1.
+*Fig 1.*
 
-enter into the folder "I2E2"
+0. enter into the folder "I2E2"
 
 1. Generate the helper files (nsets, ssets)
 
-```python
-python scripts/gen_nsets_I2E2_autonomous.sh
-python scripts/gen_nsets_I2E2_autonomous.sh
+```bash
+python scripts/gen_nsets_I2E2_autonomous.py
+python scripts/gen_nsets_I2E2_autonomous.py
 python scripts/gen_ssets_I2E2.py
 ```
 
@@ -39,7 +39,7 @@ python scripts/gen_ssets_I2E2.py
 
 3. run the simulation
 
-```python
+```bash
 python scripts/run_a_I2E2_switching_autonomous.py
 pyton scripts/run_a_I2E2_switching_toggle.py
 ```
@@ -47,9 +47,41 @@ pyton scripts/run_a_I2E2_switching_toggle.py
 The outputs are stored in the folder dir_output.
 use the accompanying plotting script to produce a figure similar to Fig.1.
 
-```python
+```bash
 python scripts/plot_data.py <dir_output/filename.dat>
 ```
+
+*Fig 2. & Fig 4. - Theta vs. No Theta in a larger network*
+
+0. enter into the folder I40E40
+1. Generate the helper files (nsets, ssets)
+
+```bash
+python scripts/gen_nsets_I40E40_shorterPulse.py	
+python scripts/gen_ssets_I40E40_randomEtoI_without_replacement.py
+```
+
+2. Compile the main cpp file with specifications for the number of neurons, neuron types, number of synapses, synapse types and so on.
+
+```bash
+./scripts/compile_many_I40E40_variablePulse.sh
+```
+
+3. run the simulation
+
+```bash
+python scripts/run_a_I40E40_randomei.py
+```
+
+4. Calculate the spike times
+
+
+
+5. produce the raster plots
+
+
+6. 	   
+
 
 
 
