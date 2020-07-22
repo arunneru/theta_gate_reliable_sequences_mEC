@@ -8,7 +8,7 @@ Peruse README.md in https://github.com/CollinsAssisi/insilico.
 I have included in each subfolder, a seperate insilico folder with all the header files necessary for running the simulations.
 Each folder is self-sufficient as a result.
 
-## Step 2 - Interfacing python with insilico
+### Step 2 - Interfacing python with insilico
 I have used python and bash in linux to generate the helper files (nsets-holds neuron paramters, ssets-holds synapse parameters) required for insilico and to compile and run the simulations.
 
 ### Step 2a
@@ -75,9 +75,16 @@ python scripts/run_a_I40E40_randomei.py
 
 4. Calculate the spike times
 
+```bash
+python scripts/run_a_I40E40_randomei.py
+```
 
 
 5. produce the raster plots
+
+```bash
+python scripts/run_a_I40E40_randomei.py
+```
 
 
 6. 	   
