@@ -19,7 +19,7 @@ def genNsets_once(l_pars):
     
     I2I = str(i2i)
     
-    outfile = open("configure_files/nsets_I2E2_switching_%si2i.isf"%str(i2i),"wb")
+    outfile = open("configure_files/nsets_I2E2_switching_%si2i.isf"%str(i2i),"w")
     print("configure_files/nsets_I2E2_switching_%si2i.isf"%str(i2i))
 
     np.random.seed(init_cond)
@@ -56,4 +56,4 @@ for init_cond in [1]:
         genNsets_once([i2i,init_cond])
         cnt += 1
 
-print cnt
+print(cnt)

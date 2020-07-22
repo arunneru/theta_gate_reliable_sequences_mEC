@@ -23,7 +23,7 @@ def genNsets_once(l_pars):
     
     I2I = str(i2i)
     
-    outfile = open("configure_files/nsets_I2E2_switching_%si2i_%sdcmax_%sshift_%sdcwidth.isf"%(str(i2i),str(dcmax),str(shift),str(dcwidth)),"wb")
+    outfile = open("configure_files/nsets_I2E2_switching_%si2i_%sdcmax_%sshift_%sdcwidth.isf"%(str(i2i),str(dcmax),str(shift),str(dcwidth)),"w")
     print("configure_files/nsets_I2E2_switching_%si2i_%sdcmax_%sshift_%sdcwidth.isf"%(str(i2i),str(dcmax),str(shift),str(dcwidth)))
 
     np.random.seed(init_cond)
@@ -64,5 +64,4 @@ for i2i in l_i2is:
                 for shift in l_shift:
                     genNsets_once([i2i,init_cond,dcmax,dcwidth,shift])
                     cnt += 1
-
-print cnt
+print(cnt)

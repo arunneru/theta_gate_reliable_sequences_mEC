@@ -19,8 +19,8 @@ def gen_oneSset(l_pars):
     
     adjlist = [[0,2,gei],[1,3,gei],[2,1,gie],[3,0,gie],[2,3,gii],[3,2,gii]]
 
-    outfile = open("configure_files/ssets_I%sE%s_gei%s_gie%s_%sgii.isf"%(NUMIS,NUMES,GEI,GIE,GII),"wb")
-    print "configure_files/ssets_I%sE%s_gei%s_gie%s_%sgii.isf"%(NUMIS,NUMES,GEI,GIE,GII)
+    outfile = open("configure_files/ssets_I%sE%s_gei%s_gie%s_%sgii.isf"%(NUMIS,NUMES,GEI,GIE,GII),"w")
+    print("configure_files/ssets_I%sE%s_gei%s_gie%s_%sgii.isf"%(NUMIS,NUMES,GEI,GIE,GII))
     
     strToFile = ""
     for i in range(len(adjlist)):
@@ -34,7 +34,7 @@ def gen_oneSset(l_pars):
             g_exc = adjlist[i][2]
             strToFile += "\"synapse %s\"dxdt:1,s:0,gsyn:%f,tau_r:0.01,tau_d:3.0,esyn:0,delay:0.0,pre:%d,post:%d;"%(str(syn),g_exc,prN,pstN)
 
-    print syn
+    print(syn)
     outfile.write(strToFile)
     outfile.close()
 

@@ -17,8 +17,8 @@ st_t = time.time()
 pool = mp.Pool()
 
 cnt = 0
-l_i2is = [0.1,0.2,0.3]
-l_geis = [0.05,0.1]
+l_i2is = [0.1]#[0.1,0.2,0.3]
+l_geis = [0.05]#[0.05,0.1]
 l_gies = [0.6]
 l_giis = [1.0]
 
