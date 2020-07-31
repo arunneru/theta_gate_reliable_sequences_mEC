@@ -10,7 +10,7 @@ def run_once(d_params):
     d_params['outputFN'] = outputFN
     d_params['nsetFN'] = nsetFN
     d_params['ssetFN'] = ssetFN
-
+    print(outputFN)
     os.system("./bins/insilico_I40E40_varPulse_{p[trial]}trial.out -o {p[outputFN]} -n {p[nsetFN]} -s {p[ssetFN]}".format(p=d_params))
 
 st_t = time.time()
@@ -33,7 +33,7 @@ for freq,extdrivefreq in l_freqNpulse:
     else:
         ampSin = 0.0
         phase = 0.0
-    for trial in [0]:
+    for trial in range(10):
         for init_cond in [1]:
             l_dparams.append({'freq':str(freq),'ampSin':str(ampSin),'trial':str(trial),'init_cond':str(init_cond),'extdrivefreq':str(extdrivefreq),'phase':str(phase)})
 
