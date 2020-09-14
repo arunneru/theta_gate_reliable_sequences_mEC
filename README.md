@@ -30,21 +30,21 @@ python scripts/gen_nsets_I2E2_autonomous.py
 python scripts/gen_ssets_I2E2.py
 ```
 
-2. Compile the main cpp file with specifications for the number of neurons, neuron types, number of synapses, synapse types and so on.
+2. Compile the main cpp file which has specifications for the number of neurons, neuron types, number of synapses, synapse types and so on.
 
 ```bash
 ./scripts/compilemany_I2E2_autonomous.sh
 ./scripts/compilemany_I2E2_toggle.sh
 ```
 
-3. run the simulation
+3. Run the simulation
 
 ```bash
 python scripts/run_a_I2E2_switching_autonomous.py
 pyton scripts/run_a_I2E2_switching_toggle.py
 ```
 
-The outputs are stored in the folder dir_output.
+After the simulation is over, the outputs would have been stored in the folder dir_output.
 use the accompanying plotting script to produce a figure similar to Fig.1.
 
 ```bash
@@ -76,14 +76,13 @@ python scripts/run_a_I40E40_randomei.py
 4. Calculate the spike times
 
 ```bash
-python scripts/run_a_I40E40_randomei.py
+python scripts/calc_spike_times.py
 ```
-
 
 5. produce the raster plots
 
 ```bash
-python scripts/run_a_I40E40_randomei.py
+python scripts/plot_raster.py
 ```
 
 
