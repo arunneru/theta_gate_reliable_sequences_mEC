@@ -86,8 +86,5 @@ python scripts/plot_raster.py
 ```
 
 
-6. 	   
-
-
-
+6. Two figures are generated: 1) *without_theta_raster.png*, 2) *with_theta_raster.png*
 
