@@ -5,10 +5,11 @@ import multiprocessing as mp
 def calc_spike_times(d_params):
 
     nNeurons = d_params['nNeurons']
+    
     outputFN = "dir_output/output_I40E40_{p[extdrivefreq]}freq_{p[ampSin]}ampSin_0.03gei_0.3gie_1.0gii_randomei_{p[trial]}trial_1initcond_{p[phase]}pibysix_noreplace.txt".format(p=d_params)
     for neuron in range(nNeurons):
         d_params['neuron'] = neuron
-        outfile = open("spike_times/spike_times_{p[extdrivefreq]}freq_{p[trial]}trial_{p[neuron]}neuron.txt".format(p=d_params),"w")     
+        outfile = open("spike_times/spike_times_{p[freq]}freq_{p[trial]}trial_{p[neuron]}neuron.txt".format(p=d_params),"w")     
         v = np.loadtxt(FN,comments='time',delimiter=',')
         t = v[::10,0]
         v = v[::10,neuron+1]
@@ -26,9 +27,8 @@ def calc_spike_times(d_params):
         outfile.write("\n")
         outfile.close()
 
-l_params = [[freq,freq] for freq in np.arange(1.0,15.0,1.0)]
-pool = mp.Pool(25) 
 
+pool = mp.Pool() 
 pibysix = (np.pi/6.0)
 
 l_freqNpulse = []
