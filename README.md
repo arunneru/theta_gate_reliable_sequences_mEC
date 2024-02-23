@@ -5,7 +5,7 @@ Helper files and libraries used for simulations
 
 ### Step 1 - Getting to know insilico
 Peruse README.md in https://github.com/CollinsAssisi/insilico.
-I have included in each subfolder, a seperate insilico folder with all the header files necessary for running the simulations.
+I have included in each subfolder a seperate insilico folder with all the header files necessary for running the simulations.
 Each folder is self-sufficient as a result.
 
 ### Step 2 - Interfacing python with insilico
