@@ -12,9 +12,9 @@ Each folder is self-sufficient as a result.
 I have used python and bash in linux to generate the helper files (nsets-holds neuron paramters, ssets-holds synapse parameters) required for insilico and to compile and run the simulations.
 
 ### Step 2a
-Follow the notebook How_To_Neuron to get a sense of how to use insilico + python to run a simulation of a single neuron
+Follow the notebook How_To_Neuron to get a sense of how to use insilico + python to run simulations of a single neuron
 ### Step 2b
-Follow the notebook How_To_Network to get a sense of how to use insilico + python to run a simulation of synaptically coupled neurons
+Follow the notebook How_To_Network to get a sense of how to use insilico + python to run simulations of synaptically coupled neurons
 
 ## Step 3 -  Steps to generate figures
 
